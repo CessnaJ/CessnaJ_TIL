@@ -18,10 +18,6 @@
 
 - 다들 열심히 한다고는 말한다. 열심히 하는 "**<mark>척</mark>**" 하지말고 잘하자!
 
-
-
-
-
 ## 22.07.17
 
 - Git/ Github 기본기능 관련 학습
@@ -33,3 +29,29 @@
 ## 22.07.19
 
 - 다시 정리할것. Python 기초 다시 배우기 시작함. 내가 모르던것도 많았고, 생각보다 사람들 다 기초는 하고 온거같은데 사람마다 모르는게 달랐다.
+
+## 22.07.20
+
+- 진도 빨리나가면서 뇌에 쏟아부어주니까 좋다.
+
+- if statement, while loop, for loop, list comprehension, dict comprehension
+
+- break, continue, for-else, pass
+
+- In-place operator
+
+- function, print vs return, input/output, args/par, **packing/unpacking**
+
+- *args, **kwargs
+
+- scope, lifecycle of variable, **Name resolution of python**(LEGB rule), global, nonlocal
+
+- filter, zip, map, lambda
+
+- recursive function
+
+- module, package
+
+- pip
+
+- venv
