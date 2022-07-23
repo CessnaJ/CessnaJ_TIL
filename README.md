@@ -56,10 +56,31 @@
 
 - venv
 
-
-
 ## 22.07.21
 
 - 어제 배운 내용들 연습문제 풀면서 공부
 
 - 3조 코드리뷰.
+
+## 22.07.22
+
+- Enumerate는 tuple로 (idx, value)를 묶어서 나열해준다.
+
+- dict를 for loop에 넣으면 key를 순서대로 loop through 해준다.
+
+## 22.07.23
+
+- if , while, recursion, ternary operator
+
+- dict comprehension
+  iterating through dict
+  오류났던 dict, append
+  looping through index, elements
+
+- lambda
+
+- truthy, falsy
+  is, not
+  logical operator
+
+- Operator precedence
