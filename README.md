@@ -84,3 +84,41 @@
   logical operator
 
 - Operator precedence
+
+
+
+
+
+### 22.07.24
+
+- 월말평가준비
+
+- Dict comprehension advanced
+
+- iterable. mutable. subscriptable. hashable. ordered. frozenset
+
+- Tuple is immutable. what if there is a list in the tuple?
+  
+  - is the element of list in the tuple still immutable?
+  
+  - 튜플안에 들어있는 list를 다른 객체로 reassign하는건 불가능
+  
+  - 하지만, 튜플 속 list의 '원소'를 바꾸는건 가능하다!
+
+
+
+### 22.07.25
+
+- is
+
+- id
+
+- pointer
+
+- print('something + '\r123') -> 124 why? 다시 정리하기.
+
+- '20' > '3' False. why? str이 되면 ascii로 1글자씩 비교한다. 마치 사전의 오름차순을 생각하면 됨.
+
+
+
+- How to use built-in data structure? -> basic methods
