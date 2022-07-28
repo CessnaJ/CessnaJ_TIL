@@ -115,15 +115,13 @@
 
 - How to use built-in data structure? -> basic methods
 
-
-
 ### 22.07.27
 
 - Class
 
 - attribute, method 전반적인 내용들.
 
--  magic method, decorator 등 세부적인 개념에 대해서 몰랐던것.
+- magic method, decorator 등 세부적인 개념에 대해서 몰랐던것.
 
 - Try Except Else Finally 개념 확실하게 재정리한게 좋았음.
 
@@ -132,3 +130,7 @@
 - 그리고 data type에 기본으로 들어있는 method들 구조화한거 외워야함.
 
 - 뭐가 있는지 빠삭하게 외울필요는 없지만 이 data type에 이런 기능을 할 수 있는 method가 있다는건 알고 있어야함.
+
+### 22.7.28
+
+- 일단 잔디 찍고 좀있다가 공부 끝나고 적을예정
