@@ -133,4 +133,6 @@
 
 ### 22.7.28
 
-- 일단 잔디 찍고 좀있다가 공부 끝나고 적을예정
+- OOP, inheritance.
+- instance method, class method, static method.
+- exception // try except else finally ->에러 적절하게 쓰는거 중요함. 근데 실제로는 에러안나게 짜는게 더 낫다. 컴퓨터의 리소스를 많이 가져가니까.
