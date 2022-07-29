@@ -136,3 +136,11 @@
 - OOP, inheritance.
 - instance method, class method, static method.
 - exception // try except else finally ->에러 적절하게 쓰는거 중요함. 근데 실제로는 에러안나게 짜는게 더 낫다. 컴퓨터의 리소스를 많이 가져가니까.
+
+### 22.7.29
+
+- cs, algorithm study 결성. 앞으로 어떻게 해나갈지 계획 개략적으로 세웠음. 교재선정 추가로 필요함. 네트워크 -> 컴퓨터구조(Architecture)->OS->DB순서로 해야됨. 근데 시간이 많이 없음.
+
+- 그래서 아마 SQLD를 신청해서 DB를 억지로 이론공부 시키게 될거고 (8.8 신청. 9월 시험)
+
+- 정처기 10월에 실기 있는거 칠거라서 괜찮을거같음. 한달에 책은 1권씩 떼는걸로 함.
