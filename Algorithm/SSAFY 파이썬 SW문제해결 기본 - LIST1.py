@@ -1,15 +1,16 @@
 # 쉽다. 빨리 풀자.
 # list라는 container를 제대로 쓰자. index는 그냥 loop를 위한게 아니라 그 자체에 의미를 부여할 수 있다.
-count_list = [0] * 10
+
 
 T = int(input()) # test case 개수
-N = int(input()) # 각 test case별로 N개의 카드
 
-card_num_input_by_str = input()
 
 
 # idx가 숫자가 몇인지를 가리키고, list idx를 통해 접근한 integer가 해당 숫자(idx를 말함)가 몇개인지를 말해줌.
 for case in range(1, T+1):
+    count_list = [0] * 10
+    N = int(input())  # 각 test case별로 N개의 카드
+    card_num_input_by_str = input()
     idx_of_most_card = 0
     most_card_count = 0
     for i in card_num_input_by_str: # count_sort를 할거임.
