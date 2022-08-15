@@ -1,4 +1,4 @@
-#생각난 방법 -> list comprehension으로 데이터를 싹 받아서 zip 처럼 치환해버리기. 첫글자 가장 공통글자 많은거 랭킹 정해서 뽑고 두번째~~~~~~n번째까지.
+# 생각난 방법 -> list comprehension으로 데이터를 싹 받아서 zip 처럼 치환해버리기. 첫글자 가장 공통글자 많은거 랭킹 정해서 뽑고 두번째~~~~~~n번째까지.
 N, M = map(int, input().split())
 list_for_zip = [input() for _ in range(N)]
 hamming_distance = 0
