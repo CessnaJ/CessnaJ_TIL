@@ -18,9 +18,12 @@ if total_row * total_col < target:
 else:
     assignment = 1
     direction_order = 0
-    for i in range(total_row * total_row):
+    for i in range(total_row * total_col):
         matrix[assign_idx[0]][assign_idx[1]] = assignment
-        # assign 해주고.
+        if assignment == target:
+            print(assign_idx[1]+1, total_row - assign_idx[0])
+            break
+        # assign 해주고. # 아래는 벽에 부딛힌다면. 그리고 not을 써서 truthy로 인식되는 0이외의 assign된 객체와 만나게 된다면, 이라는 뜻. (건너기전에 돌다리 두들기는것.)
         if 0 <= assign_idx[0]+direction_yx[direction_order % 4][0] <= total_row-1 and 0 <= assign_idx[1]+direction_yx[direction_order % 4][1] <= total_col-1 \
                 and not matrix[assign_idx[0]+direction_yx[direction_order % 4][0]][assign_idx[1]+direction_yx[direction_order % 4][1]]:
 
@@ -30,8 +33,6 @@ else:
             direction_order+=1
             assign_idx[0], assign_idx[1] = assign_idx[0] + direction_yx[direction_order % 4][0], assign_idx[1] + \
                                            direction_yx[direction_order % 4][1]
-        if assignment == target:
-            print(assign_idx[1], total_row -assign_idx[0])
-            break
+
         assignment += 1
 
