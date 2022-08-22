@@ -31,3 +31,56 @@ def mimicing_bubble_sort(given_list):
                 given_list[i], given_list[i+1] = given_list[i+1], given_list[i]
 
 # 얘는 복원정렬이에요~ O(n^2)
+
+def binary_search(arr, N, key):
+    start = 0
+    end = N-1
+    while start <= end:
+        middle = (start + end)//2
+        if arr[middle] == key:
+            return True
+        elif arr[middle] < key:
+            start = arr[middle] + 1
+        else:
+            end = arr[middle] -1
+    return False
+
+given_list = [1,5,7,8,4,2,4,4,63,7,45,4,46,45,3252,636]
+
+
+def selection_sort(arr):
+    for i in range(len(arr)-1):
+        for j in range(i+1, len(arr)):
+            minimum = arr[i]
+            if arr[j] < minimum:
+                arr[j], arr[i] = arr[i], arr[j]
+
+    return  arr
+
+print(selection_sort(given_list))
+
+def select(arr,k):
+    for i in range(0,k):
+        minIndex = i
+        for j in range(i+1, len(arr)):
+            if arr[minIndex] > arr[j]:
+                minIndex = j
+        arr[i], arr[minIndex] = arr[minIndex], arr[i]
+
+    return arr[k-1]
+
+def fibo1(n):
+    global memo
+    if n>= 2 and len(memo) <= n: # memo가 몇개 찼는지, recursion을 들어가야하는지 아니면 memo에서 걍 호출하는지 결정
+        memo.append(fibo(n-1) + fibo(n-2))
+    return memo[n]
+
+memo = [0,1]
+
+def fibo1(n):
+    global memo
+    if n>= 2 and len(memo) <= n: # memo가 몇개 찼는지, recursion을 들어가야하는지 아니면 memo에서 걍 호출하는지 결정
+        memo.append(fibo(n-1) + fibo(n-2))
+    return memo[n]
+
+memo = [0,1]
