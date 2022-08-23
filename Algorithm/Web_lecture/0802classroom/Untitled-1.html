@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .border {
+      border: 1px solid black
+        /*border-style: solid;
+      border-coror:black;
+      border-width: 1px; */
+    }
+
+    div {
+      width: 100px;
+      height: 100px;
+      padding: 10px 20px 30px 40px;
+      /* box sizing: border-box; */
+      background-color: transparent;
+      background-image: url(파이리.jpg);
+      background-size: cover;
+      /*커버는 비율유지하면서 보여줄것만 .. 근데 비율유지하고 남는애들은 오른쪽에 똑같은거 복사되서 왼쪽만 짤려서 나올거임.*/
+      background-repeat: no-repeat;
+      /*no repeat 넣어주면 기존에 작은 사진 격자형으로 붙혀넣어주던거 안넣고 한번만 넣어주는걸로 변화.*/
+      /*패딩은 컨텐츠랑 박스랑 관련이 있는거지 백그라운드랑은 상관없다.*/
+    }
+
+    span {
+      display: block;
+      width: 500px;
+      height: 500px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="border">HTML 블록요소는 한 행을 꽉 채운다!</div>
+  <span class="border">CSS 이렇게 쓰고 밑에 스팬으로 자바스크립트 쓰면 어케됨?</span>
+  <span class="border">JAVASCRIPT 엥? 위에거랑 다르게 바로 오른쪽에 오잖아?위에 보면 div는 사각형 되는데 span은 안되네? why? block요소랑 inline요소랑
+    다르니까! div는 태생이 블록인데, span은 태생이 인라인이다. 이걸 위에거처럼 높이 가지게 하려면 블록처럼 만들어야함. span의 style에 display: block; 넣어서 모든 스팬을 블록처럼
+    만든다.</span>
+  <span>padding에서 하나만 지정하면 4방형이고 ~~~~ 말씀하신거 좀 찾아보자. 하 오늘 공부할게 많다. 너무 바쁩니다. 내부는 content와 padding으로 나뉜다. block과 block의 거리는
+    margin이라고 함. 디브 안에 디브가 있다고봐라.. 패딩을 키우면 박스사이즈가 커질 위험이 있다는거 주의해라.</span>
+  <span>padding에 10px 하나만 넣으면 4방향 다 10px씩 패딩. 2개 10px, 50px 넣으면 상하 10px, 좌우50px, 3개 넣으면 상 좌 우순서. 4개 넣으면 위에부터
+    시계방향.</span>
+  <span>이미지도 인라인요소다. 오른쪽으로 쭉쭉 넣을거니까. 근데 예외적으로 높이 너비 설정이 가능하다~ </span>
+  <span>박스 이동을 하기 위해서는 박스 내부에 대해서 먼저 알아야한다. 박스 내부 어떻게 여백, 위치 설정되는지..<br>
+    디브 안에다가.. background-image.. div보다사진이 더 작으면 격자로 막붙혀질거야. 백그라운드<br>근데 div안에 div를 놨을때, 그 박스간의 간격은 padding으로 잡을까 아니면
+    margin으로 잡을까? </span>
+</body>
+
+</html>

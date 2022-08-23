@@ -1,0 +1,46 @@
+디브 안에 디브 있을때.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+    }
+
+    .child {
+      width: 100px;
+      height: 100px;
+      border: 1px dotted red;
+      margin-left: auto;
+
+    }
+
+    .child2 {
+      width: 100px;
+      height: 100px;
+      border: 1px dashed blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="child">
+      <span>마진 레프트만 쓰면 오른쪽으로 딱 붙어버림. 거기에 마진 라이트까지 같이 써주면 중앙정렬. 오토로 계산해서 알아서 넣어버림.</span>
+    </div>
+  </div>
+  <div class="child2"></div><br>
+  <span>부모를 기준으로 해서 아예 위에 일괄적으로 공간 주고싶으면 패딩을 넣어서 띄우면 되고, 개별요소 하나만 뒤 보더에서 내려주고 싶으면 margin-top줘서 개별로 하나만 띄우면 됨.<br>
+    혹시 위아래 대상으로 봤을때 60px 간격을 주고싶으면 60px 각각주는건 당연히 되는데 40 20 해도 될까? 안됨. 40으로 넣어야 함. (마진 병합현상. 큰쪽에 흡수되어 버린다. 병합이 되어야 한쪽에
+    몰아서 레이아웃을 딱딱 쓰게 된다.)<br>마진병합현상은 위아래만 그렇다. 좌우는 또 안그래! 20 40 각각 밀면 60이 밀린다. 그리고 왠만하면 패딩을 쓰는게 맞고, 의도가 있어야 마진을 쓰는거다.
+    <br> 왠만하면 클래스 선택자를 찍고. 태그 선택자를 찍는건 다른사람이 내 코드를 봤을때, 혼동을 줄 수 있으니 쓰지않는다. </span>
+</body>
+
+</html>
